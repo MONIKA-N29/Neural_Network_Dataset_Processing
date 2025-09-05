@@ -62,6 +62,43 @@ https://github.com/MONIKA-N29/Neural_Network_Dataset_Processing/blob/main/Screen
 ![Sample Predictions Architecture 2]-
 https://github.com/MONIKA-N29/Neural_Network_Dataset_Processing/blob/main/Screenshot%202025-09-05%20181602.png
 
+Choosing Initial Architecture:
+
+•	Architecture 1 (Initial Choice):
+o	3 Conv2D layers (32 → 64 → 128) with MaxPooling
+o	Flatten → Dense(128) → Dropout(0.5) → Output
+•	Reason for choosing:
+o	Simple baseline to quickly test performance
+o	Easier to train and observe initial results
+•	Evaluation Metrics Used:
+o	Validation accuracy: 83%
+o	Loss curves (training vs validation)
+
+•	Observations:
+o	Worked well overall; captured basic features
+o	Some individual predictions were wrong
+o	Limitations: May not capture complex patterns due to simplicity
+
+Changing Architecture
+•	Architecture 2 (Modified Choice):
+o	Added 1 extra Conv2D layer (32 → 64 → 128 → 256)
+o	Added BatchNormalization after each convolution
+o	Replaced Flatten with GlobalAveragePooling
+o	Dense(256) → Dropout(0.5) → Output
+
+•	Reason for Change:
+o	Improve feature extraction and generalization
+o	Reduce overfitting using BatchNormalization
+o	Handle more complex patterns in the images
+•	Evaluation Metrics Used:
+o	Validation accuracy: 75%
+o	Loss curves (training vs validation)
+o	Sample predictions to see qualitative performance
+
+•	Observations:
+o	All sample prediction images were predicted correctly.
+o	Validation accuracy decreased compared to Architecture 1 (likely overfitting or more tuning needed).
+o	Demonstrates that deeper networks may require more epochs, data, or hyperparameter tuning to outperform simpler models.
 
 Conclusion:
 
