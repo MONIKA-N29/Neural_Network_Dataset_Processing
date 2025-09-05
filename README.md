@@ -38,3 +38,11 @@ Validation Accuracy: YY% (replace with your result)
 
 Observation:
 Architecture 2 achieved better accuracy due to deeper layers, batch normalization, and more epochs.
+
+Training Curves
+
+Accuracy and loss plots:
+
+![Architecture1 Accuracy and Loss] https://github.com/MONIKA-N29/Neural_Network_Dataset_Processing/blob/main/Screenshot%202025-09-05%20180046.png
+![Architecture2 Accuracy and Loss] https://github.com/MONIKA-N29/Neural_Network_Dataset_Processing/blob/main/Screenshot%202025-09-05%20180435.png
+
