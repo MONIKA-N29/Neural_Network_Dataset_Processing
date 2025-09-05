@@ -29,7 +29,8 @@ Loss: categorical_crossentropy
 
 Results:
 Training epochs: 10
-Validation Accuracy: XX% (replace with your result)
+
+Validation Accuracy: 75% 
 
 Architecture 2 – Deeper CNN
 
@@ -42,7 +43,8 @@ Loss: categorical_crossentropy
 
 Results:
 Training epochs: 20
-Validation Accuracy: YY% (replace with your result)
+
+Validation Accuracy: 83% 
 
 Training Curves:
 Accuracy and loss plots
