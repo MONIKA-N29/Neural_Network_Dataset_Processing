@@ -36,13 +36,38 @@ Results:
 Training epochs: 20
 Validation Accuracy: YY% (replace with your result)
 
-Observation:
-Architecture 2 achieved better accuracy due to deeper layers, batch normalization, and more epochs.
-
-Training Curves
-
-Accuracy and loss plots:
+Training Curves:
+Accuracy and loss plots
 
 ![Architecture1 Accuracy and Loss] https://github.com/MONIKA-N29/Neural_Network_Dataset_Processing/blob/main/Screenshot%202025-09-05%20180046.png
+
 ![Architecture2 Accuracy and Loss] https://github.com/MONIKA-N29/Neural_Network_Dataset_Processing/blob/main/Screenshot%202025-09-05%20180435.png
 
+Sample Predictions:
+Sample images showing True vs Predicted labels
+
+![Sample Predictions Architecture 1]-
+https://github.com/MONIKA-N29/Neural_Network_Dataset_Processing/blob/main/Screenshot%202025-09-05%20181153.png
+
+![Sample Predictions Architecture 2]-
+https://github.com/MONIKA-N29/Neural_Network_Dataset_Processing/blob/main/Screenshot%202025-09-05%20181602.png
+
+
+Conclusion:
+
+In this project, we successfully built and trained Convolutional Neural Networks (CNNs) to classify images from the Intel Image Dataset into six categories: buildings, forest, glacier, mountain, sea, and street. Two different architectures were implemented and evaluated.
+
+Observations from Architecture 1 (Basic CNN):
+The model achieved reasonable accuracy with fewer layers.Training was faster but the network struggled with complex patterns in some classes.It provided a good baseline for comparison with deeper architectures.
+
+Observations from Architecture 2 (Deeper CNN with BatchNormalization):
+Adding more convolutional layers and batch normalization improved feature extraction and generalization.GlobalAveragePooling reduced overfitting compared to Flatten, and Dropout further helped in regularization.Validation accuracy was higher than Architecture 1, indicating better performance on unseen images.
+
+Overall, the project demonstrates that increasing network depth and using regularization techniques like BatchNormalization and Dropout can significantly improve CNN performance on multi-class image classification tasks. Visualizing predictions and training curves helped us understand how the models learned and where they could improve.
+
+Future Work:
+Implementing Transfer Learning with pre-trained models such as VGG16 or ResNet50 to further improve accuracy.
+Experimenting with data augmentation to expand the dataset and make the models more robust.
+Fine-tuning hyperparameters like learning rate, batch size, and optimizer choice to optimize performance.
+
+This work shows the practical workflow of building, evaluating, and comparing CNN models for image classification and highlights the importance of architecture choices, training strategies, and model evaluation in deep learning projects.
