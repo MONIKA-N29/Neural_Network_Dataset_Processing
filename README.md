@@ -1,4 +1,5 @@
 Introduction:
+
 Images from the Intel Image Dataset are classified into six categories—buildings, forest, glacier, mountain, sea, and street—using Convolutional Neural Networks (CNNs).
 The goal is to compare different CNN architectures, evaluate their performance, and visualize results with accuracy/loss curves and sample predictions.
 
@@ -75,11 +76,13 @@ o	Validation accuracy: 83%
 o	Loss curves (training vs validation)
 
 •	Observations:
+
 o	Worked well overall; captured basic features
 o	Some individual predictions were wrong
 o	Limitations: May not capture complex patterns due to simplicity
 
-Changing Architecture
+Changing Architecture:
+
 •	Architecture 2 (Modified Choice):
 o	Added 1 extra Conv2D layer (32 → 64 → 128 → 256)
 o	Added BatchNormalization after each convolution
@@ -87,6 +90,7 @@ o	Replaced Flatten with GlobalAveragePooling
 o	Dense(256) → Dropout(0.5) → Output
 
 •	Reason for Change:
+
 o	Improve feature extraction and generalization
 o	Reduce overfitting using BatchNormalization
 o	Handle more complex patterns in the images
@@ -96,6 +100,7 @@ o	Loss curves (training vs validation)
 o	Sample predictions to see qualitative performance
 
 •	Observations:
+
 o	All sample prediction images were predicted correctly.
 o	Validation accuracy decreased compared to Architecture 1 (likely overfitting or more tuning needed).
 o	Demonstrates that deeper networks may require more epochs, data, or hyperparameter tuning to outperform simpler models.
